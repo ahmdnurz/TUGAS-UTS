@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f3f6fa;
+    text-align: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    background: white;
+    width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+.info {
+    background: #e9f2ff;
+    border: 1px solid #c7ddff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.nama {
+    font-weight: 600;
+    font-size: 18px;
+    color: #0d47a1;
+}
+
+.nim {
+    font-weight: 600;
+    font-size: 18px;
+    color: #0d47a1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #457b9d;
+    box-shadow: 0 0 5px #a8dadc;
+    transform: scale(1.02);
+}
+
+button {
+    padding: 10px;
+    background: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1d3557;
+    transform: scale(1.05);
+}
+
+.hitung-box {
+    margin-top: 20px;
+}
+
+/* Animasi lembut */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tampilan hasil */
+.hasil-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fafafa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hasil-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.input-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.input-table th, .input-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.input-table th {
+    width: 50%;
+    background: #457b9d;
+    color: white;
+}
+
+.volume {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #1d3557;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #1d3557;
+}
+
+a:hover {
+    text-decoration: underline;
+}
