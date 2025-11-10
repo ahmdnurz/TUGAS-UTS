@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hitung Volume Bangun Ruang</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+<div class="container fade-in">
+    <h1>Aplikasi Hitung Volume Bangun Ruang</h1>
+
+    <div class="info">
+        <p class="nama">{{ nama }}</p>
+        <p class="nim">{{ nim }}</p>
+    </div>
+
+    <form method="POST">
+        <label>Pilih Bangun Ruang:</label>
+        <select name="bangun" required>
+            <option value="Balok">Balok</option>
+            <option value="Kubus">Kubus</option>
+            <option value="Tabung">Tabung</option>
+            <option value="Kerucut">Kerucut</option>
+            <option value="Bola">Bola</option>
+        </select>
+        <button type="submit">Lanjut</button>
+    </form>
+</div>
+</body>
+</html>
